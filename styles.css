@@ -1,0 +1,253 @@
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-rayish-magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);    
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-image:
+        url(/images/bg-pattern-top-desktop.svg),
+        url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-size: 30%, 85%;
+    background-repeat: no-repeat no-repeat; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;   
+    height: 100vh; 
+}
+.container{
+    display: flex;
+    margin-top: 8em;
+}
+
+/* HEADER  */
+
+.header{
+    width: 50%;
+    text-align: start;
+    margin-left: 10em;
+}
+
+.header__title1{
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    margin: 0 0;
+    line-height: .95;
+}
+
+.header__title2{
+    
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--dark-rayish-magenta);
+}
+
+/* STARS */
+
+.container-stars{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    margin-right: 25.5em;
+    
+}
+
+ .stars{
+    background-color: var(--Light-Grayish-Magenta);
+    width: 33em;
+    margin: 0.5em;
+    padding: 1.2em;
+    padding-right: 3em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--dark-rayish-magenta);
+    display: flex;
+}
+
+.stars p{
+    align-self: center;
+    margin: 0;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+ 
+.stars__img{
+    width: 1.3em;
+    margin: 3px; 
+}
+
+.stars1{
+    margin-right: 23em;
+}
+
+.stars2{
+    margin-right: 13em;
+}
+
+.stars3{
+    margin-right: 3em;
+}
+
+/* CARDS */
+
+.container__cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2em;
+    margin-top: 6rem;
+    margin-left: 10em;
+    
+}
+.card{
+    background-color: var(--very-dark-magenta);
+    width: 24.1%;
+    height: 20em;
+    border-radius: .75em;
+    box-shadow: 1px 1px 1px black;
+    color: var(--White); 
+   
+}
+
+.card__top{
+    display: flex;
+}
+
+.card__person{ 
+    margin: 2.5em 2em;
+}
+
+.card__name{
+    color: var(--White);
+    margin-bottom: .4em;
+    
+}
+
+.card__subtitule{
+    display: flex;
+    margin: 0 0;
+    font-weight: 200;
+    color: var(--soft-pink);
+    font-size: large;
+}
+
+.card__img{
+    align-self: flex-start;
+    border-radius: 50%;
+    margin-top: 3em;
+    margin-left: 3em;
+    width: 13.5%;
+}
+
+
+.card__p{
+    margin: 0 3.4em;
+    line-height: 2em;
+}
+
+.card2{
+    transform: translateY(1.3rem);
+    
+}
+.card3{
+    transform: translateY(2.3rem);
+}
+
+.attribution {
+    margin-top: 10em;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        overflow: visible;
+        background-size: 114%, 85%;
+    }
+
+    .container{
+        margin: 0 0;
+        padding: 0 0;
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }
+
+    .header{
+        display: flex;
+        flex-flow: column ;
+        text-align: center;
+        margin: 0 0;
+        margin-top: 7em;
+        width: 100%;
+    }
+  
+    .header__title1{
+        font-size: 2.5em;
+        width: 85%;
+        margin: .2em auto;
+        text-align: center;
+    }
+
+    .header__title2 {
+        font-size: .98em;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .header__title2 br{
+            display: none;
+    }
+
+    .container-stars{
+        margin: 0 0;
+       width: 100%;
+       margin-bottom: 2em;
+    }
+
+    .stars__img{
+        width: 12%;
+        padding: .07em
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 0;
+        padding: 1em 0;
+    }
+
+    .container__cards{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        gap: .1em;
+    }
+   
+    .card{
+         width: auto; 
+         height: 21em; 
+         margin: 0 auto;
+         font-size: .8em;
+    }
+   
